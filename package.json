@@ -1,0 +1,26 @@
+{
+  "name": "node_starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "build": "babel src --out-dir ./dist --source-maps",
+    "serve": "node ./dist/index.js",
+    "test": "./node_modules/.bin/mocha --compilers js:@babel/register",
+    "debug": "node --inspect-brk ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4"
+  }
+}
